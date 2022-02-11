@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Ejericio 2    
+    Crear el código que reciba como parámetro un array de números y devuelva el mayor. -->
+
+    <script>
+        let numeros = [250,40,695,55,0,22,658,30,0,25,-1,44];
+        document.write('Los numeros del vector desordenados son:<br>' );
+        document.write(numeros, '<br><br>');
+        numeros.sort( (a,b) =>
+        {
+            if (a==b)
+            {
+                return 0;
+            }
+            if (a>b)
+            {
+                return -1;
+            }
+            else{
+                return 0;
+            }
+        });
+        document.write('Los numeros del vector ordenados son:<br> ');
+        document.write(numeros);
+    </script>
+</body>
+</html>

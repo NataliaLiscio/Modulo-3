@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Modulo 3 Unidad 3</title>
+</head>
+<body>
+    <!-- Ejericio 1
+    Crear el código que dada una distancia determine el medio de transporte apropiado de acuerdo a las siguientes reglas:
+    0 a 1000 metros = pie    
+    1000 a 10000 metros = bicicleta
+    10000 a 30000 metros = colectivo
+    30000 a 100000 metros = auto
+    +100000 = avion -->
+
+   
+    <script>
+        var distancia;
+        do {
+            distancia = prompt('Íngrese la distancia a recorrer: ','');
+        } while (distancia<0);
+        
+        document.write('El medio de transporte adecuado para la distancia ingresada es: ');
+
+        if (distancia<100000){
+            if (distancia<3000){
+                if (distancia<10000){
+                    if (distancia<1000){
+                        document.write('PIE')
+                    }else { document.write('BICICLETA');}
+                } else{Document.write('COLECTIVO');}
+            } else{Document.write('AUTO');}
+        } else{Document.write('AVION');}
+    </script>
+
+
+   
+</body>
+</html>
