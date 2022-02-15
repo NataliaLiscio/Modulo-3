@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- //Crear un documento html con 3 cuadrados que, al ser clickeados, cambien el color de fondo del documento.
+Cada cuadrado debera tener un color distinto// -->
+
+
+<div class="caja">
+<div class="color" onclick="cambiarcolor(0)" style="background-color: red;">rojo</div>
+<div class="color" onclick="cambiarcolor(1)" style="background-color: blue;">azul</div>
+<div class="color" onclick="cambiarcolor(2)" style="background-color: green;">verde</div>
+</div>
+
+<style>
+    .caja{
+        display: flex;
+    }
+    .color{
+        height: 200px;
+        width: 200px;
+        text-align: center;
+    }
+</style>
+
+<script>
+    var pos;
+    function cambiarcolor(pos) 
+    {
+                if ( pos==0) 
+                {
+    				document.querySelector('body').style.background= 'red';
+    			} 
+                else 
+                {
+    				if (pos==1)
+                    {
+                        document.querySelector('body').style.background= 'blue';
+                    }
+                    else
+                    {
+                        document.querySelector('body').style.background= 'green';         
+                    }
+                }
+	}
+</script>
+</body>
+</html>
